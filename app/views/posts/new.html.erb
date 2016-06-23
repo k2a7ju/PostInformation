@@ -1,0 +1,12 @@
+<h2>投稿フォーム</h2>
+<%= form_for(@post) do |f| %>
+<div>
+	<%= f.label :contents %><br/>
+	<%= f.text_area :contents %>
+</div>
+<div>
+	<%= f.submit %>
+</div>
+<a href="#" onClick="window.close(); return false;">ウィンドウを閉じる</a>
+
+<% end %>

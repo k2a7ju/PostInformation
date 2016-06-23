@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Postダブル</title>
+	<script type="text/javascript">
+		<!--	
+
+		function disp(url){
+
+			window.open(url, "window_name", "width=400,height=250,scrollbars=yes");
+
+		}
+
+// -->
+</script>
+</head>
+<body>
+	<h1>拡散したったー</h1>
+	<p><a href='posts/new' target="window_name" onClick="disp('posts/new')">投稿</a></p>
+	<% @post.each do |post| %>
+	<%= post.contents %><br/>
+	<% end %>
+
+
+</body>
+</html>
